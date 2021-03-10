@@ -1,6 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import Team from '../Team/Team';
 import './Home.css'
+import banner1 from '../../Assets/Images/banner1.jpg'
+import banner2 from '../../Assets/Images/banner2.jpg'
+import banner3 from '../../Assets/Images/banner3.jpg'
+import banner4 from '../../Assets/Images/banner4.jpg'
+import Header from '../Header/Header';
+import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
 
 
 const Home = () => {
@@ -16,20 +23,17 @@ const Home = () => {
     }, [])
     return (
         <div>
-            <div className="main-banner">
-                <div>
-                    <img src="https://www.thesportsdb.com/images/media/team/fanart/cal7fg1485707947.jpg" alt="main-banner" />
-                </div>
-                <div className="banner-text">
-                    <h1 className="text-highlight">World Team Info</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, est.</p>
-                </div>
+            <div>
+                <Navbar></Navbar>
+                <Header></Header>
+                
             </div>
             <div className="d-flex flex-wrap justify-content-center py-5">
                 {
                     teams.map(team => <Team team={team}></Team>)
                 }
             </div>
+            <Footer></Footer>
         </div>
     );
 };

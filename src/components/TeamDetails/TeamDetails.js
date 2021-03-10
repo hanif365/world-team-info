@@ -11,6 +11,8 @@ import flag from '../../Assets/Images/flag (1) 1.png'
 import sport from '../../Assets/Images/football (1) 1.png'
 import gender from '../../Assets/Images/male-gender-sign 1.png'
 import { Link } from 'react-router-dom';
+import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
 
 const TeamDetails = () => {
     const { teamId } = useParams();
@@ -37,14 +39,17 @@ const TeamDetails = () => {
             .then(data => {
                 console.log(data);
                 console.log(data.teams);
-                console.log(data.teams[0].strCountry);
-                console.log(data.teams[0].strTeam);
+                // console.log(data.teams[0].strCountry);
+                // console.log(data.teams[0].strTeam);
                 setTeamDetails(data.teams[0]);
             })
     }, [])
     // const {strTeam} = data.teams[0];
     return (
         <div className="team-body">
+            <div>
+                <Navbar></Navbar>
+            </div>
             <div className="banner-container">
                 <div className="">
                     <div className="">
@@ -60,11 +65,11 @@ const TeamDetails = () => {
                     <div className="row g-0">
                         <div className="col-md-5">
                             <div className="card-body">
-                                <h5 className="card-title">{teamDetails.strTeam}</h5>
-                                <p className="card-text">{<img className="icon" src={founded} />} Founded : { }</p>
-                                <p className="card-text">{<img className="icon" src={flag} />} Country : {teamDetails.strCountry}</p>
-                                <p className="card-text">{<img className="icon" src={sport} />} Sport Type : {teamDetails.strSport}</p>
-                                <p className="card-text">{<img className="icon" src={gender} />} Gender : {teamDetails.strGender}</p>
+                                <h1 className="card-title">{teamDetails.strTeam}</h1>
+                                <h5 className="card-text">{<img className="icon" src={founded} />} Founded : {teamDetails.intFormedYear}</h5>
+                                <h5 className="card-text">{<img className="icon" src={flag} />} Country : {teamDetails.strCountry}</h5>
+                                <h5 className="card-text">{<img className="icon" src={sport} />} Sport Type : {teamDetails.strSport}</h5>
+                                <h5 className="card-text">{<img className="icon" src={gender} />} Gender : {teamDetails.strGender}</h5>
                             </div>
                         </div>
                         <div className="col-md-7">
@@ -97,6 +102,9 @@ const TeamDetails = () => {
                         {/* <Link to={teamDetails.strTwitter}>Twitter</Link> */}
                     </div>
                 </div>
+            </div>
+            <div>
+                <Footer></Footer>
             </div>
         </div>
     );
