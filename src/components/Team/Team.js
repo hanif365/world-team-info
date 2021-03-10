@@ -5,21 +5,21 @@ import './Team.css'
 import { Link, useHistory } from 'react-router-dom';
 
 const Team = (props) => {
-    // console.log(props.team);
-    console.log(props.team.idTeam);
+    console.log(props.team);
+    // console.log(props.team.idTeam);
     const { strTeam, strTeamBadge, strSport, idTeam } = props.team;
 
     // use History
     const history = useHistory();
-    
+
     const handleClick = (teamId) => {
         const url = `/team/${teamId}`;
         history.push(url);
     }
 
     return (
-        <div className="d-inline-flex">
-            <div class="card team-card text-center m-3 p-3">
+        <div className="">
+            <div class="card team-card text-center m-4 p-3">
                 {/* <img src="#" class="card-img-top" alt="..."> */}
                 {/* <img src={require('/images/image-name.png')} /> */}
                 <img className="team-card-img" src={strTeamBadge} alt="team-badge" />

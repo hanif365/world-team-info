@@ -1,8 +1,9 @@
 .team-card{
-    width: 26rem;
+    width: 24rem;
     margin: auto;
 }
 .team-card-img{
-    width: 300px;
+    /* width: 250px; */
+    width: 15.625rem;
     margin: auto;
 }

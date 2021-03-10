@@ -1,0 +1,25 @@
+.main-banner img{
+    height: 400px;
+    /* width: 1325px; */
+    width: 100%;
+    opacity: 0.5;
+    transition: all 600ms;
+}
+.main-banner img:hover{
+    opacity: 1;
+}
+.main-banner{
+    position: relative;
+    cursor: pointer;
+}
+.banner-text{
+    /* width: 200px; */
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text-highlight{
+    font-size: 60px;
+}
