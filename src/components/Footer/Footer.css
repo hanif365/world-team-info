@@ -1,3 +1,5 @@
+/******************************** Footer Style ********************************/
+
 #footer-section {
     background: #4895ef;
     padding: 15px;
@@ -28,6 +30,6 @@
 }
 
 .bottom-to-top:hover {
-    background: #8a04f8;
+    background: #780ad3;
     color: #fff;
 }

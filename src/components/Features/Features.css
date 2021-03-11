@@ -1,0 +1,9 @@
+.feature-container {
+    background-color: lightgreen;
+    text-align: center;
+}
+
+.feature-container img {
+    width: 100%;
+    height: 22rem;
+}

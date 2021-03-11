@@ -5,11 +5,9 @@ import './Team.css'
 import { Link, useHistory } from 'react-router-dom';
 
 const Team = (props) => {
-    console.log(props.team);
-    // console.log(props.team.idTeam);
-    const { strTeam, strTeamBadge, strSport, idTeam } = props.team;
+    const { strTeam, strTeamBadge, strSport, idTeam } = props.team;     // Destructuring
 
-    // use History
+    // use History Hook 
     const history = useHistory();
 
     const handleClick = (teamId) => {
@@ -20,16 +18,10 @@ const Team = (props) => {
     return (
         <div>
             <div class="card team-card text-center m-4 p-3" id="team-container">
-                {/* <img src="#" class="card-img-top" alt="..."> */}
-                {/* <img src={require('/images/image-name.png')} /> */}
                 <img className="team-card-img" src={strTeamBadge} alt="team-badge" />
                 <div class="card-body">
                     <h1 className="card-title">{strTeam}</h1>
                     <h3>Sports type : {strSport}</h3>
-
-                    {/* <Link to={`/team/${idTeam}`}>
-                        <button className="btn btn-warning">Explore <b>{strTeam}</b> team <FontAwesomeIcon icon={faArrowRight} /></button>
-                    </Link> */}
                     <button className="btn btn-info" onClick={() => handleClick(idTeam)}>Explore <b>{strTeam}</b> team <FontAwesomeIcon icon={faArrowRight} /></button>
                 </div>
             </div>

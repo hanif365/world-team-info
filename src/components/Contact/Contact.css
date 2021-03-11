@@ -1,0 +1,9 @@
+.contact-container {
+    background-color: mediumturquoise;
+    text-align: center;
+}
+
+.contact-container img {
+    width: 100%;
+    height: 22rem;
+}

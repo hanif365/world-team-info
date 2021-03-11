@@ -3,7 +3,6 @@ import './Header.css'
 import banner1 from '../../Assets/Images/banner1.jpg'
 import banner2 from '../../Assets/Images/banner2.jpg'
 import banner3 from '../../Assets/Images/banner3.jpg'
-import banner4 from '../../Assets/Images/banner4.jpg'
 
 const Header = () => {
     return (
@@ -19,22 +18,22 @@ const Header = () => {
                         <div class="carousel-item active">
                             <img src={banner1} className="d-block w-100 h-50" alt="banner-image1" />
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
+                                <h1>World Team Info</h1>
+                                <h4>You Can Know your favourite Team Information just one click</h4>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src={banner2} class="d-block w-100 h-50" alt="banner-image2" />
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
+                                <h1>Distribute happiness</h1>
+                                <h4>You can contact to your favourite team member using facebook, twitter, instagram.</h4>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src={banner3} class="d-block w-100 h-50" alt="banner-image3" />
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
+                                <h1>Watching Live match</h1>
+                                <h4>You Can Watching Live match from their own YouTube Channel.</h4>
                             </div>
                         </div>
                     </div>

@@ -1,0 +1,9 @@
+.fixture-container {
+    background-color: mediumaquamarine;
+    text-align: center;
+}
+
+.fixture-container img {
+    width: 100%;
+    height: 22rem;
+}

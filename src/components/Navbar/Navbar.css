@@ -1,42 +1,48 @@
-.navbar-text{
+.navbar-text {
     font-size: 1.5rem;
     font-weight: 700;
     color: #000;
     transition: all 600ms;
 }
-.navbar-text:hover{
+
+.navbar-text:hover {
     color: #ffff;
 }
-.logo{
+
+.logo {
     font-size: 1.9rem;
 }
-.navbar{
+
+.navbar {
     background-color: #73b8f8;
     padding: 1rem;
 }
-.navbar-brand{
+
+.navbar-brand {
     color: #000 !important;
 }
-.navbar-brand:hover{
+
+.navbar-brand:hover {
     color: #000;
 }
 
-.navbar-nav a{
+.navbar-nav a {
     color: #000;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 20px;
     transition: all 600ms;
 }
-.navbar-nav a:hover{
+
+.navbar-nav a:hover {
     color: #fff !important;
 }
 
-@media(max-width:576px){
-    .navbar-text{
+@media(max-width:576px) {
+    .navbar-text {
         font-size: 1rem;
     }
-    .logo{
+    .logo {
         font-size: 1rem;
     }
 }

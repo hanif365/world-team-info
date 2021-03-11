@@ -12,7 +12,7 @@ const Footer = () => {
             </footer>
 
             <div>
-                <a href="#" className="bottom-to-top"><FontAwesomeIcon icon={faArrowUp} size="2x"/></a>
+                <a href="#" className="bottom-to-top"><FontAwesomeIcon icon={faArrowUp} size="2x" /></a>
             </div>
         </div>
     );

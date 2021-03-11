@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Team from '../Team/Team';
 import './Home.css'
-import banner1 from '../../Assets/Images/banner1.jpg'
-import banner2 from '../../Assets/Images/banner2.jpg'
-import banner3 from '../../Assets/Images/banner3.jpg'
-import banner4 from '../../Assets/Images/banner4.jpg'
 import Header from '../Header/Header';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
@@ -13,6 +9,7 @@ import Footer from '../Footer/Footer';
 const Home = () => {
     const [teams, setTeams] = useState([]);
 
+    // Fetch API to load data and then it converted to JSON format
     useEffect(() => {
         const url = `https://www.thesportsdb.com/api/v1/json/1/search_all_teams.php?l=English%20Premier%20League`
         fetch(url)
@@ -26,11 +23,11 @@ const Home = () => {
             <div>
                 <Navbar></Navbar>
                 <Header></Header>
-                
+
             </div>
             <div className="text-center py-5 team-list-style">
                 <h1>TEAM LIST</h1>
-                <hr/>
+                <hr />
             </div>
             <div className="d-flex flex-wrap justify-content-center">
                 {

@@ -6,15 +6,15 @@ import { useHistory, useParams } from 'react-router';
 import './TeamDetails.css'
 import maleTeam from '../../Assets/Images/male.png'
 import femaleTeam from '../../Assets/Images/female.png'
-import { Link } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 
 const TeamDetails = () => {
-    const { teamId } = useParams();
+    const { teamId } = useParams();     // using useParams
 
     const [teamDetails, setTeamDetails] = useState([]);
 
+    // Load teamdata using teamId 
     useEffect(() => {
         const url = `https://www.thesportsdb.com/api/v1/json/1/lookupteam.php?id=${teamId}`
         fetch(url)
@@ -22,8 +22,6 @@ const TeamDetails = () => {
             .then(data => {
                 console.log(data);
                 console.log(data.teams);
-                // console.log(data.teams[0].strCountry);
-                // console.log(data.teams[0].strTeam);
                 setTeamDetails(data.teams[0]);
             })
     }, [])
@@ -50,7 +48,6 @@ const TeamDetails = () => {
                         <div className="col-md-5">
                             <div className="card-body">
                                 <h1 className="card-title">{teamDetails.strTeam}</h1>
-                                {/* <h5 className="card-text">{<img className="icon" src={founded} />} Founded : {teamDetails.intFormedYear}</h5> */}
                                 <h5 className="card-text"><FontAwesomeIcon icon={faPodcast} /> Founded : {teamDetails.intFormedYear}</h5>
                                 <h5 className="card-text"><FontAwesomeIcon icon={faFlag} /> Country : {teamDetails.strCountry}</h5>
                                 <h5 className="card-text"><FontAwesomeIcon icon={faFutbol} /> Sport Type : {teamDetails.strSport}</h5>
@@ -58,9 +55,6 @@ const TeamDetails = () => {
                             </div>
                         </div>
                         <div className="col-md-7 p-3">
-                            {/* <img className="team-details-img" src="https://e0.365dm.com/20/03/2048x1152/skysports-arsenal-olympiakos_4944696.jpg" alt="team-image" /> */}
-                            {/* <img className="team-details-img" src={maleTeam} alt="team-image" /> */}
-
                             {
                                 teamDetails.strGender === "Male" || "male" ? <img className="team-details-img" src={maleTeam} alt="male-team-image" /> : <img className="team-details-img" src={femaleTeam} alt="female-team-image" />
                             }
@@ -74,10 +68,6 @@ const TeamDetails = () => {
                         <p className="mb-5">{teamDetails.strDescriptionEN}</p>
                         <p>{teamDetails.strStadiumDescription}</p>
                         <p>{teamDetails.strDescriptionFR}</p>
-                        {/* <p>{teamDetails.strDescriptionES}</p>
-                        <p>{teamDetails.strDescriptionDE}</p>
-                        <p>{teamDetails.strDescriptionNO}</p>
-                        <p>{teamDetails.strDescriptionIT}</p> */}
                     </div>
                 </div>
             </div>
