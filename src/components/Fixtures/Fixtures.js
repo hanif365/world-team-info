@@ -10,7 +10,7 @@ const Fixtures = () => {
                     <div>
                         <h1>Fixtures will come very soon....</h1>
                         <img className="my-2" src={fixtureImg} alt="error-message" />
-                        <h3>Please wait some days.</h3>
+                        <h3>Please wait....Thank You.</h3>
                         <a className="btn btn-danger" href="/home">Close</a>
                     </div>
                 </div>

@@ -20,11 +20,9 @@ const TeamDetails = () => {
         fetch(url)
             .then(response => response.json())
             .then(data => {
-                console.log(data);
-                console.log(data.teams);
                 setTeamDetails(data.teams[0]);
             })
-    }, [])
+    }, [teamId])
 
     return (
         <div className="team-body">
@@ -54,6 +52,8 @@ const TeamDetails = () => {
                                 <h5 className="card-text"><FontAwesomeIcon icon={faVenusMars} /> Gender : {teamDetails.strGender}</h5>
                             </div>
                         </div>
+
+                        {/* Using Conditional Formatting  to check which image will show*/}
                         <div className="col-md-7 p-3">
                             {
                                 teamDetails.strGender === "Male" || "male" ? <img className="team-details-img" src={maleTeam} alt="male-team-image" /> : <img className="team-details-img" src={femaleTeam} alt="female-team-image" />

@@ -31,7 +31,7 @@ const Home = () => {
             </div>
             <div className="d-flex flex-wrap justify-content-center">
                 {
-                    teams.map(team => <Team team={team}></Team>)
+                    teams.map(team => <Team key={team.idTeam} team={team}></Team>)
                 }
             </div>
             <Footer></Footer>
