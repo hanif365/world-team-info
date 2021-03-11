@@ -1,6 +1,7 @@
 import React from 'react';
 import './Features.css'
 import featureImg from '../../Assets/Images/feature.jpg'
+import { Link } from 'react-router-dom';
 
 const Features = () => {
     return (
@@ -11,7 +12,7 @@ const Features = () => {
                         <h1>Features will come very soon....</h1>
                         <img className="my-2" src={featureImg} alt="error-message" />
                         <h3>Please wait....Thank You.</h3>
-                        <a className="btn btn-danger" href="/home">Close</a>
+                        <Link className="btn btn-danger" to="/home">Close</Link>
                     </div>
                 </div>
             </div>

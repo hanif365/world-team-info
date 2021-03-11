@@ -1,6 +1,7 @@
 import React from 'react';
 import './Fixtures.css'
 import fixtureImg from '../../Assets/Images/fixture.jpg'
+import { Link } from 'react-router-dom';
 
 const Fixtures = () => {
     return (
@@ -11,7 +12,7 @@ const Fixtures = () => {
                         <h1>Fixtures will come very soon....</h1>
                         <img className="my-2" src={fixtureImg} alt="error-message" />
                         <h3>Please wait....Thank You.</h3>
-                        <a className="btn btn-danger" href="/home">Close</a>
+                        <Link className="btn btn-danger" to="/home">Close</Link>
                     </div>
                 </div>
             </div>

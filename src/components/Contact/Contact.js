@@ -1,6 +1,7 @@
 import React from 'react';
 import './Contact.css'
 import contactImg from '../../Assets/Images/contact.jpg'
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
     return (
@@ -11,7 +12,7 @@ const Contact = () => {
                         <h1>Contact will come very soon....</h1>
                         <img className="my-2" src={contactImg} alt="error-message" />
                         <h3>Please wait....Thank You.</h3>
-                        <a className="btn btn-danger" href="/home">Close</a>
+                        <Link className="btn btn-danger" to="/home">Close</Link>
                     </div>
                 </div>
             </div>
