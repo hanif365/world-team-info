@@ -1,0 +1,11 @@
+.team-list-style hr {
+    /* margin-top: 1rem; */
+    /* margin-bottom: 555rem; */
+    border: 0;
+    border-top: 5px solid #04cbee1a;
+    max-width: 12rem;
+    margin: auto;
+}
+#main-container{
+    background-color: #a2d2ff;
+}

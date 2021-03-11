@@ -7,7 +7,7 @@ import banner4 from '../../Assets/Images/banner4.jpg'
 
 const Header = () => {
     return (
-        <div>
+        <div className="">
             <div className="main-banner">
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">

@@ -18,8 +18,8 @@ const Team = (props) => {
     }
 
     return (
-        <div className="">
-            <div class="card team-card text-center m-4 p-3">
+        <div>
+            <div class="card team-card text-center m-4 p-3" id="team-container">
                 {/* <img src="#" class="card-img-top" alt="..."> */}
                 {/* <img src={require('/images/image-name.png')} /> */}
                 <img className="team-card-img" src={strTeamBadge} alt="team-badge" />
@@ -30,7 +30,7 @@ const Team = (props) => {
                     {/* <Link to={`/team/${idTeam}`}>
                         <button className="btn btn-warning">Explore <b>{strTeam}</b> team <FontAwesomeIcon icon={faArrowRight} /></button>
                     </Link> */}
-                    <button className="btn btn-danger" onClick={() => handleClick(idTeam)}>Explore <b>{strTeam}</b> team <FontAwesomeIcon icon={faArrowRight} /></button>
+                    <button className="btn btn-info" onClick={() => handleClick(idTeam)}>Explore <b>{strTeam}</b> team <FontAwesomeIcon icon={faArrowRight} /></button>
                 </div>
             </div>
         </div>

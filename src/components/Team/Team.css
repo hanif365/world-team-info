@@ -1,9 +1,19 @@
 .team-card{
-    width: 24rem;
+    max-width: 24rem;
     margin: auto;
 }
 .team-card-img{
     /* width: 250px; */
-    width: 15.625rem;
+    max-width: 15.625rem;
     margin: auto;
+}
+#team-container{
+    background-color: #bde0fe;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.322);
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all 600ms;
+}
+#team-container:hover{
+    opacity: 1;
 }

@@ -22,13 +22,17 @@ const Home = () => {
             })
     }, [])
     return (
-        <div>
+        <div id="main-container">
             <div>
                 <Navbar></Navbar>
                 <Header></Header>
                 
             </div>
-            <div className="d-flex flex-wrap justify-content-center py-5">
+            <div className="text-center py-5 team-list-style">
+                <h1>TEAM LIST</h1>
+                <hr/>
+            </div>
+            <div className="d-flex flex-wrap justify-content-center">
                 {
                     teams.map(team => <Team team={team}></Team>)
                 }
