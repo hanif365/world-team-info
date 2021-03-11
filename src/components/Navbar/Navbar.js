@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className="container navbar-container navbar-light">
             <nav class="navbar navbar-expand-lg fixed-top px-3">
                 <div class="container-fluid">
-                    <Link class="navbar-brand" to="/home"><FontAwesomeIcon className="logo" icon={faFutbol} size="1.5x" /> <span className="navbar-text">WORLD TEAM INFO</span></Link>
+                    <Link class="navbar-brand" to="/"><FontAwesomeIcon className="logo" icon={faFutbol} size="1.5x" /> <span className="navbar-text">WORLD TEAM INFO</span></Link>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>

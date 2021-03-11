@@ -11,7 +11,7 @@ Details: Hi! there, Sports are one of the part of our life. If you want to know 
     (e) You can visit their facebook, twitter and instagram page.
     (f) You also visit their YouTube channel.
 
-Live Link Of site : 
+Live Link Of site : https://worldteaminfo.netlify.app/
 
 
 Now, go to above link and see your fovourite team information!!!!!!!!!!!!!
