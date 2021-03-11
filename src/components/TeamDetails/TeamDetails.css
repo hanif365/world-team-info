@@ -70,17 +70,3 @@ a.twitter {
 a.instagram {
     color: black;
 }
-
-/* Using Media Query  */
-
-@media(max-width:768px) {
-    .team-badge {
-        max-width: 6rem;
-    }
-}
-
-@media(max-width:576px) {
-    .team-badge {
-        max-width: 3rem;
-    }
-}
